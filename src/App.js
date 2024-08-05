@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { useEffect, useState } from "react"
 import "./App.css"
@@ -46,7 +47,7 @@ const App = () => {
       setSearchNote(searchNoteValue)
     }
     handleSearchNotes()
-  }, [delaySearchValue])
+  }, [notes, delaySearchValue])
 
   const handleSearchTerm = (e) => {
     setSearchTerm(e.target.value)
@@ -107,7 +108,7 @@ const App = () => {
         <Router>
           <Routes>
             <Route
-              path="/"
+              path="/React-note-app"
               element={
                 <Header addItemModal={addItemModal} handleSearchTerm={handleSearchTerm} searchTerm={searchTerm} />
               }
