@@ -1,0 +1,49 @@
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 0.4rem 1.5rem -0.4rem rgba(10, 10, 20, 0.2);
+}
+header div {
+  height: 50px;
+  width: 70%;
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+header div input {
+  height: 40px;
+  width: 90%;
+  margin-left: 10px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+header div input::placeholder {
+  color: #232323;
+}
+header button {
+  width: 90px;
+  height: 50px;
+  margin-left: 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  background: rgb(0, 190, 248);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+header button span {
+  color: #fff;
+  margin-left: 5px;
+}
